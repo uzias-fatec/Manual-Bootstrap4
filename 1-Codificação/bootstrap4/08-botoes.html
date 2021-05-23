@@ -16,10 +16,12 @@
   <body style="padding-bottom: 200px; width: 600px; margin: 0 auto;border: 1px solid red;">
 
     <!-- Botoes 
-    formatação padrao: btn
-    formatação específicas:
-    btn-primary, btn-secondary, btn-success, btn-info,
-    btn-warning, btn-danger, btn-light, btn-dark, btn-link
+    formatação padrao: class="btn"
+
+    formatação específicas: Cores dos botões ↓
+
+    btn-primary(azul), btn-secondary(cinza-escuro), btn-success(verde), btn-info (azul-claro),
+    btn-warning(laranja-claro), btn-danger(vermelho), btn-light(Quase transparente), btn-dark(preta), btn-link
     -->
     <h3>Botões</h3>
     <button class="btn btn-dark" type="button">Clique</button>
@@ -32,13 +34,16 @@
     <input class="btn btn-info" type="reset" value="Reset">
 
     <!-- Botoes com contorno
-    btn-outline-<formato>
+    btn-outline-<formato(danger)>
     -->
     <h3>Botões com contorno</h3>
     <button class="btn btn-outline-danger" type="button">Clique</button>
 
     <!-- Tamanhos de botões
-    opções: btn-lg, btn-sm, btn-block
+    opções:
+    btn-lg = Grande
+    btn-sm = Pequeno
+    btn-block = Tipo Bloco, ocupad todo espaço do body
     -->
     <h3>Tamanhos dos botões</h3>
     <button class="btn btn-info btn-lg" type="button">Grande</button>
@@ -48,31 +53,33 @@
     <button class="btn btn-info btn-block" type="button">Bloco</button>
 
     <!-- Estados dos botões
-    opções: active, disabled
+    opções:
+    active: Opção fica marcada informando que a opção já foi selecionada
+    disabled: Link fica inativo, impossibilitando o acesso.
     -->
     <h3>Estados de botões</h3>
     <button class="btn btn-success" type="button">Normal</button>
     <button class="btn btn-success active" type="button">Ativo</button>
     <button class="btn btn-success disabled" type="button">Inativo</button>
     <br><br>
-    <button class="btn btn-success" type="button" data-toggle="button">Alternar</button>
+    <button class="btn btn-success" type="button" data-toggle="button">Alternar</button> <!-- data-toggle="button: habilita a opção de alternar estado do botão, de ativo para inativo e vice versa  -->
 
     <h3>Grupos de botões - horizontal</h3>
-    <div class="btn-group">
+    <div class="btn-group"> <!-- Classe Grupo de botões, exibi todos os botões na horizontal, como se fosse 1   -->
         <button class="btn btn-info" type="button">Esquerda</button>
         <button class="btn btn-info" type="button">Centro</button>
         <button class="btn btn-info" type="button">Direita</button>
     </div>
 
     <h3>Grupos de botões - vertical</h3>
-    <div class="btn-group-vertical">
+    <div class="btn-group-vertical"> <!-- Classe Grupo de botões, exibi todos os botões na vertical, como se fosse 1 -->
         <button class="btn btn-danger" type="button">Topo</button>
         <button class="btn btn-danger" type="button">Meio</button>
         <button class="btn btn-danger" type="button">Fundo</button>
     </div>
 
     <h3>Toolbar de botões</h3>
-    <div class="btn-toolbar">
+    <div class="btn-toolbar"> <!-- Classe de botão com Toolbar, ou seja aproxima os botões -->
         <div class="btn-group">
            <button class="btn btn-danger" type="button">1</button>
            <button class="btn btn-danger" type="button">2</button>
@@ -85,13 +92,13 @@
     </div>
 
     <h3>Botões dropdown</h3>
-    <div class="dropdown">
+    <div class="dropdown"><!-- Classe Dropdown =  -->
         <button class="btn btn-success dropdown-toggle" 
         data-toggle="dropdown" type="button">
-            Clique
+            Clique <!-- Classe: dropdown-toggle = Criar seta do botão, Atributo: data-toggle="dropdown   -->
         </button>
-        <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Link 1</a>
+        <div class="dropdown-menu"> <!-- Classe para criar o menu do botão, e fazer associação -->
+            <a href="#" class="dropdown-item">Link 1</a> <!--class="dropdown-item" para os itens ir para o dropdown MENU-->
             <div class="dropdown-divider"></div>
             <a href="#" class="dropdown-item">Link 2</a>
             <a href="#" class="dropdown-item">Link 3</a>
