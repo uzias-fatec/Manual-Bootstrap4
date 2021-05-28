@@ -16,20 +16,20 @@
   <body style="margin-bottom: 200px;padding: 16px;">
 
     <!-- Listas -->
-    <ul class="list-group">
-        <li class="list-group-item">Meu item de lista 1</li>
-        <li class="list-group-item active">Meu item de lista 2</li>
+    <ul class="list-group"> <!-- Classe padrão para Lista de Grupos -->
+        <li class="list-group-item">Meu item de lista 1</li> <!-- <list-group-item> = Item de cada grupo -->
+        <li class="list-group-item active">Meu item de lista 2</li> <!-- <list-group-item active>   Item  ATIVO -->
         <li class="list-group-item">Meu item de lista 3</li>
         <li class="list-group-item">Meu item de lista 4</li>
     </ul>
     <br><br>
 
-    <!-- Listas com classe flush -->
+    <!-- Listas com classe flush, estilo que remove as linhas laterais -->
     <ul class="list-group list-group-flush">
         <li class="list-group-item">Meu item de lista 1</li>
         <li class="list-group-item">Meu item de lista 2</li>
         <li class="list-group-item">Meu item de lista 3</li>
-        <li class="list-group-item active">Meu item de lista 4</li>
+        <li class="list-group-item active">Meu item de lista 4</li> <!-- Item Ativo -->
     </ul>
     <br><br>
 
@@ -38,14 +38,16 @@
         <a class="list-group-item" href="#">Meu item de lista 1</a>
         <a class="list-group-item" href="#">Meu item de lista 2</a>
         <a class="list-group-item" href="#">Meu item de lista 3</a>
-        <a class="list-group-item active" href="#">Meu item de lista 4</a>
+        <a class="list-group-item active" href="#">Meu item de lista 4</a> <!-- Item ativo -->
     </ul>
     <br><br>
 
     <!-- Listas com classes contextuais 
-        classe: list-group-item-<opcoes>
-        opções: primary, secondary, success, info,
-                warning, danger, light, dark
+
+        classe: LIST-GROUP-ITEM-<OPCOES>
+
+        opções: PRIMARY, SECONDARY, SUCCESS, INFO,
+                WARNING, DANGER, LIGHT, DARK
     -->
     <ul class="list-group">
         <li class="list-group-item">Lista normal</li>
@@ -60,10 +62,11 @@
     </ul>
     <br><br>
 
-    <!-- Badge 
-        classe: badge-<opcoes>
-        opções: primary, secondary, success, info,
-                warning, danger, light, dark
+    <!-- Badge = texto com fundo 
+        classe: BADGE-<OPCOES>
+
+        opções: PRIMARY, SECONDARY, SUCCESS, INFO,
+                WARNING, DANGER, LIGHT, DARK
     -->
     <ul class="list-group">
         <li class="list-group-item">Meu item de lista 1</li>
@@ -80,7 +83,7 @@
     <br><br>
 
 
-    <!-- Breadcrumb -->
+    <!-- Breadcrumb = "Migalhas de pão", cria os links, como se fosse o diretorio de um S.O-->
     <ol class="breadcrumb">
         <li class="breadcrumb-item">Home</li>
     </ol>

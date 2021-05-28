@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
 
-    <title>Bootstrap - botões</title>
+    <title>Bootstrap - Barra de Navegação</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,37 +17,50 @@
 
     <!-- Navegação
     Tipos de navegação:
-        nav-pills
-        nav-tabs
-    opções de alinhamento: 
-        justify-content-center 
-        justify-content-end
-        flex-column
+    NAV: class="nav = Formatação padrão de navegação
+    NAV-PILLS: Arredondamento (LINK ativo)
+    NAV-TABS: Navegação por abas
+
+    opções de alinhamento:
+
+    JUSTIFY-CONTENT-CENTER: Barra de navegação Centralizada
+    JUSTIFY-CONTENT-END: Barra de navegação a Direita
+    FLEX-COLUMN: Barra de navegação em Colunas/Vertical
+    OBS: POR PADRÃO A BARRA DE NAVEGAÇÃO É CRIADA A ESQUERDA.
     -->
     <h2>Navegação simples / abas</h2>
-    <ul class="nav nav-pills flex-column">
+
+    <ul class="nav nav-pills flex-column"> <!-- <ul> Barra de Navegação do arredondada (nav-pills) e vertical (flex-column)  -->
+
+
+        <li class="nav-item"> <!--class="nav-item = Item da Navegação  -->
+
+            <!-- Acesso a documentação official Bootstrap 4.1  -->
+            <a href="https://getbootstrap.com.br/docs/4.1/components/navs/" class="nav-link active ">Documentação Official</a> <!--class="nav-link active: Item da Navegação Ativado.  -->
+
+        </li>
+
         <li class="nav-item">
-            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Sobre</a> <!-- nav-link = pertence a nav-item -->
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">Sobre</a>
+            <a href="" class="nav-link">Serviços</a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link active">Serviços</a>
-        </li>
-        <li class="nav-item">
-            <a href="" class="nav-link disabled">link 4</a>
+            <a href="" class="nav-link disabled">link 4</a> <!--class="nav-link disable: Item da Navegação Desativado.  -->
         </li>
     </ul>
     
 
     <h2>Barra de navegação simples</h2>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+     <!-- NAVBAR: class="navbar = Formatação padrão de navegação da tag <nav> -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!--NAVBAR-EXPAND-SM (Expansão horizontal para o tipo SM), NAVBAR-DARK (Letras com cor cinza) BG-DARK (Fundo com a cor dark=cinza)   -->
         <!-- Logo -->
-        <a href="" class="navbar-brand">Chalé Hotel</a>
+        <a href="" class="navbar-brand">Chalé Hotel</a> <!--navbar-brand = Logo da barra de Navegação  -->
 
         <!-- navegacao -->
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto"> <!-- <ul> ML-AUTO: Margem Esquerda Automatica   -->
             <li class="nav-item">
                 <a href="" class="nav-link">Home</a>
             </li>
@@ -69,12 +82,17 @@
 
         <!-- Menu Hamburguer -->
         <button class="navbar-toggler" data-toggle="collapse" 
-        data-target="#navegacao">
-            <span class="navbar-toggler-icon"></span>
+        data-target="#navegacao"> <!--  
+        DATA-TOGGLE="COLLAPSE = Define que o Botão será pressionado e Esconder o Conteudo
+        DATA-TARGET= Define o que será aberto quando o botão for pressionado  -->
+
+            <span class="navbar-toggler-icon"></span> <!-- NAVBAR-TOGGLER-ICON: Criação do Icone (Hamburger) para exibir as barras de Navegação
+            OBS: Icone é exibido conforme a a class: NAVBAR-EXPAND-SM, que indica o tamanho da tela   -->
         </button>
 
         <!-- navegacao -->
-        <div class="collapse navbar-collapse" id="navegacao">
+        <div class="collapse navbar-collapse" id="navegacao"><!-- COLLAPSE: Esconde o links da barra de Navegação, NAVBAR-COLLAPSE: Exibição do Menu em baixo.  -->
+
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="" class="nav-link">Home</a>
@@ -149,12 +167,12 @@
                     <a href="" class="nav-link">Sobre</a>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown"> <!-- <li> DROPDOWN: Esconder e Aparecer  -->
                     <a href="" class="nav-link dropdown-toggle" 
-                    data-toggle="dropdown">Serviços</a>
+                    data-toggle="dropdown">Serviços</a> <!-- DROPDOWN-TOGGLE: Aparecer a seta do "Sub-menu"  -->
 
                     <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Serviço 1</a>
+                        <a href="" class="dropdown-item">Serviço 1</a> <!-- Listar itens do Dropdown"Sub-menu"-->
                         <a href="" class="dropdown-item">Serviço 2</a>
                         <a href="" class="dropdown-item">Serviço 3</a>
                     </div>
@@ -205,8 +223,11 @@
     <h1>Lorem ipsum dolor sit amet</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
 
-    <!--Alinhamentos
-    opções: fixed-top, fixed-bottom, sticky
+    <!--Alinhamentos/ Fixação
+    opções:
+    FIXED-TOP: Fixa o Conteudo na barra superior/topo
+    FIXED-BOTTOM:  Fixa o Conteudo na barra inferior/em baixo
+    STICKY:  Fixa o Conteudo no meio, e apos rolar a pagina para baixo fica no topo.
     -->
     <h2>Alinhamentos</h2>
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-success">

@@ -29,11 +29,20 @@
 
   <body>
 
+    <!--<container> = Onde fica o Conteudo do Site, ele é responsivel(Se adapta a tipos diferentes de tela ).  -->
     <div class="container marcador-container">
       
-      <div class="row">
+      <div class="row"> <!-- ROW = LINHA/FILA  Ocupa todo o espaço disponivel ou seja as 12 Colunas do GRID-->
         
         <div class="marcador col-md-6 col-xl-4">
+
+          <!--<col-md-6> Ocupa 6 de 12 Colunas do GRID quando está >= a 768px, ou seja Container é divido em duas partes na tela  -->
+
+          <!-- <col-xl-4> Ocupa 4 de 12 Colunas do GRID quando está >= a 1200px, ou seja o conteudo fica tdo na mesma linha  -->
+
+          <!--Telas menores que 768px, os conteúdos, ficam um a baixo do outro -->
+
+          <!-- OBS: Quando as 12 Colunas do GRID estiverem preenchidas, a proxima coluna vai automaticamente para linha de baixo. -->
 
           <h2>Lorem ipsum dolorem sit amet</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper lorem eu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
