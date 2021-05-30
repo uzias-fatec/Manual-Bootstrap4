@@ -33,28 +33,70 @@
 
     <div class="container">
 
-      <h2>Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h2>
+
+      <!-- ALINHAMENTO VERTICAL
+        Sintaxe: align-items-<TipoAlinhamento>
+
+        START:    Alinhamento  SUPERIOR
+        CENTER:   Alinhamento  CENTRO
+        END:      Alinhamento  INFERIOR          
+          
+          -->
+
+      <h2>Alinhamento vertical (align-items-(ALINHAMENTO): start, center, end)</h2>
+      <!-- Inserção na <row> -->
       <div class="marcador row align-items-center">
         <div class="col borda">Área 1</div>
         <div class="col borda">Área 2</div>
         <div class="col borda">Área 3</div>
       </div>
 
-      <h2>Alinhamento vertical individual (align-self-ALINHAMENTO: start, center, end)</h2>
+
+      <!-- ALINHAMENTO INVIDIDUAL
+        Sintaxe: align-self-<TipoAlinhamento>
+
+         START: Alinhamento   ESQUERDA   
+        CENTER: Alinhamento   CENTRO
+          END:  Alinhamento   DIREITA        
+          
+          -->
+
+      <h2>Alinhamento vertical individual (align-self-(ALINHAMENTO): start, center, end)</h2>
       <div class="marcador row">
+        <!-- Inserido no próprio item -->
         <div class="col borda align-self-start">Área 1</div>
         <div class="col borda align-self-center">Área 2</div>
         <div class="col borda align-self-end">Área 3</div>
       </div>
 
-      <h2>Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)</h2>
+
+        <!-- ALINHAMENTO HORIZONTAL
+        Sintaxe: justify-content-<TipoAlinhamento>
+
+         START: Alinhamento   ESQUERDA   
+        CENTER: Alinhamento   CENTRO
+          END:  Alinhamento   DIREITA             
+          
+          -->
+
+      <h2>Alinhamento horizontal colunas (justify-content-(ALINHAMENTO): start, center, end)</h2>
+
+       <!-- Inserção na <row> -->
       <div class="row justify-content-start">
         <div class="marcador col-2">Área 1</div>
         <div class="marcador col-2">Área 2</div>
         <div class="marcador col-2">Área 3</div>
       </div>
 
-      <h2>Distribuição (justify-content-ALINHAMENTO: around, between)</h2>
+      <!--
+        DISTRIBUIÇÃO DAS COLUNAS PADRONIZADAS 
+
+      Sintaxe: justify-content<TipoAlinhamento>
+      AROUND: Faz a distribuição dos itens da colunas -  TEM MARGEM
+      BETWEEN: Faz a distribuição dos itens da colunas -  NÃO TEM MARGEM
+       -->
+      <h2>Distribuição (justify-content-(ALINHAMENTO): around, between)</h2>
+       <!-- Inserção na <row> -->
       <div class="row borda justify-content-around">
         <div class="marcador col-2">Área 1</div>
         <div class="marcador col-2">Área 2</div>
@@ -62,6 +104,8 @@
         <div class="marcador col-2">Área 4</div>
       </div>
 
+
+        <!-- <NO-GUTTERS> = Remover Espaçamento do "padding" -->
       <h2>Removendo espaçamento</h2>
       <div class="row no-gutters">
         <div class="borda col-2">Área 1</div>

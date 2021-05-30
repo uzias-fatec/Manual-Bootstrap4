@@ -29,49 +29,69 @@
 
   <body>
 
+      <!--
+      <CONTAINER> classe utilizada para "marcar" onde fica o conteudo do site, tem margem como padrão.
+          <CONTAINER-FLUID> Preenche todo espaço, NÃO TEM MARGEM.
+        -->
     <div class="container marcador-container">
       
       <h2>Largura fixa</h2>
-      <div class="row">
+
+        <!-- ROW = LINHA/FILA  Local onde fica  as 12 Colunas do GRID-->
+      <div class="row"> <!-- ROW = LINHA/FILA  Local onde fica  as 12 Colunas do GRID-->
+
+        <!-- <COL> = Usado para criar uma tabela com tamanho fixo -->
         <div class="marcador col">área 1</div>
         <div class="marcador col">área 2</div>
         <div class="marcador col">área 3</div>
         <div class="marcador col">área 4</div>
       </div>
 
+
       <h2>Largura automática (auto-layout)</h2>
       <div class="row">
-        <div class="marcador col">área 1</div>
-        <div class="marcador col">área 2</div>
-        <div class="marcador col-6">área 3</div>
+
+        <!-- OBS: Ao definir <COL-6> o "ÁREA 3" terá o tamanho fixo de 6 colunas, e as outras duas colunas dividiram o restante do GRID, ou seja 6  6/2 = 3 Colunas para cada.  -->
+        <div class="marcador col">área 1</div> <!-- Ocupam 3 Colunas  -->
+        <div class="marcador col">área 2</div> <!-- Ocupam 3 Colunas  -->
+        <div class="marcador col-6">área 3</div><!-- Ocupa Tamanho Fixo de 6 Colunas -->
       </div>
 
 
       <h2>Largura igual empilhada</h2>
       <div class="row">
+
+        <!--<COL-SM> = Define que ao chegar a tela (SM <= 576px) as colunas ficaram empilhaas  -->
         <div class="marcador col-sm">área 1</div>
         <div class="marcador col-sm">área 2</div>
         <div class="marcador col-sm">área 3</div>
       </div>
 
+
       <h2>Ordenando</h2>
       <div class="row">
-        <div class="marcador col-md-4 order-2">área 1</div>
-        <div class="marcador col-md-4 order-3">área 2</div>
-        <div class="marcador col-md-4 order-1">área 3</div>
+
+        <!--<ORDER> usado para modificar a ordem dos elementos, independente da ordem.  -->
+        <div class="marcador col-md-4 order-2">área 1</div> <!-- AREA 1 Exibido em 2º -->
+        <div class="marcador col-md-4 order-3">área 2</div> <!-- AREA 2 Exibido em 3º -->
+        <div class="marcador col-md-4 order-1">área 3</div> <!-- AREA 3 Exibido em 1º -->
       </div>
 
       <h2>offset</h2>
       <div class="row">
-        <div class="marcador col-md-6 offset-md-3">Login...</div>
+        <!-- <OFFSET> utilizado para pular/espaçamento  de Colunas -->
+        <div class="marcador col-md-6 offset-md-3">Login...</div> <!-- "LOGIN" começa na 4 Coluna GRID, pois <OFFSET-MD-3> deu um espaçamento de 3 Colunas. -->
       </div>
 
       <h2>offset múltiplos alinhamentos</h2>
       <div class="row">
         <div class="marcador col-md-3">Conteúdo 1</div>
-        <div class="marcador col-md-3 offset-md-6">Conteúdo 2</div>
+        <div class="marcador col-md-3 offset-md-6">Conteúdo 2</div> <!-- USANDO <OFFSET> para espaçamento entre as colunas  na mesma linha. -->
       </div>
 
+
+      <!-- Area de Teste -->
+      
       <h2>Aninhamento</h2>
       <div class="row">
         <div class="col-md-6" style="border: 1px solid blue">
@@ -83,7 +103,10 @@
         </div>
       </div>
 
-    </div>
+
+
+        </div>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
