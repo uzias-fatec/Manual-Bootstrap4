@@ -16,11 +16,16 @@
   <body style="margin-bottom: 200px;padding: 16px;">
     
     <h3 class="border-bottom">Cartão simples</h3>
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Título do cartão</h4>
-        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+    <div class="card"> <!-- <card> Classe Padrão de Cartão -->
+
+      <div class="card-body"> <!--<card-body> Classe para o corpo do Cartão -->
+
+        <h4 class="card-title">Título do cartão</h4> <!-- < card-title> Titulo -->
+
+        <h6 class="card-subtitle">Subtítulo do cartão</h6><!-- <card-subtitle> Sub-titulo -->
+          <!-- <card-text> Texto Cartões -->
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <!-- Botão branco com borda azul-->
         <a class="btn btn-outline-primary" href="">Leia mais</a>
       </div>
     </div>
@@ -35,15 +40,17 @@
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
         <a class="btn btn-outline-primary" href="">Leia mais</a>
       </div>
+      <!-- <card-img-bottom> = imagem inferior para cartão-->
       <img class="card-img-bottom" src="https://source.unsplash.com/random/600x200">
     </div>
 
     <br><br>
 
     <h3 class="border-bottom">Cartão com imagem sobreposta</h3>
-    <div class="card text-white">
+    <div class="card text-white"> <!-- Cor do texto = branco -->
       <img class="card-img" src="https://source.unsplash.com/random/600x250">
-      <div class="card-img-overlay">
+
+      <div class="card-img-overlay"> <!-- <card-img-overlay> sobrepor o texto -->
         <h4 class="card-title">Título do cartão</h4>
         <h6 class="card-subtitle">Subtítulo do cartão</h6>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
@@ -55,7 +62,7 @@
 
     <h3 class="border-bottom">Cartão com cabeçalho</h3>
     <div class="card">
-      <div class="card-header">
+      <div class="card-header"> <!-- <card-header> Cabeçalho Cartão   -->
         Cabeçalho do cartão
       </div>
       <div class="card-body">
@@ -69,7 +76,7 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com cabeçalho e rodapé / Alinhamento</h3>
-    <div class="card text-right">
+    <div class="card text-right"> <!--<card text-right> Cartões com Texto a direita -->
       <div class="card-header">
         Cabeçalho do cartão
       </div>
@@ -79,7 +86,7 @@
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
         <a class="btn btn-outline-danger" href="">Leia mais</a>
       </div>
-      <div class="card-footer">
+      <div class="card-footer"> <!-- <card-footer> Rodapé do tipo cartão  -->
         Rodapé do cartão
       </div>
     </div>
@@ -89,15 +96,16 @@
     <h3 class="border-bottom">Cartão com navegação</h3>
     <div class="card">
       <div class="card-header">
-        <ul class="nav nav-tabs card-header-tabs">
+        <!-- <nav nav-tabs> Navegação com abas, <card-header-tabs> Navegação com abas do tipo cartão  -->
+        <ul class="nav nav-tabs card-header-tabs"> 
           <li class="nav-item">
-            <a class="nav-link active" href="">Link 1</a>
+            <a class="nav-link active" href="">Link 1</a> <!-- Item/Link ativo -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Link 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="">Link 3</a>
+            <a class="nav-link disabled" href="">Link 3</a> <!-- Item/Link Desativado  -->
           </li>
         </ul>
       </div>
@@ -112,6 +120,8 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com cores de fundo</h3>
+
+    <!-- Background azul, texto branco, Margem inferior = 2 -->
     <div class="card bg-primary text-white mb-2">
       <div class="card-header">
         Cabeçalho do cartão
@@ -124,6 +134,7 @@
       </div>
     </div>
 
+    <!-- Background vermelho, texto branco, Margem inferior = 2 -->
     <div class="card bg-danger text-white mb-2">
       <div class="card-header">
         Cabeçalho do cartão
@@ -139,6 +150,7 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com bordas</h3>
+    <!-- <border-danger> Borda do tipo cartão (cor vermelha) -->
     <div class="card border-danger mb-2">
       <div class="card-body">
         <h4 class="card-title">Título do cartão</h4>
@@ -151,6 +163,7 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com colunas</h3>
+    <!-- <card-columns> Classe para criar Colunas de Cartões -->
     <div class="card-columns">
       
       <!-- inicio cartao -->
