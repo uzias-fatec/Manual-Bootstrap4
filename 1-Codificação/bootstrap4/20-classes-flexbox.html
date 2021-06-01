@@ -30,6 +30,15 @@
     <div class="container">
 
       <h2>Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse)</h2>
+
+    <!-- Tipos
+    D-FLEX: Cria um Flex Container 
+    FLEX-ROW: Cria uma linha e fica um item a baixo do outro - não ocupa todo espaço
+    FLEX-COLUMN: Cria uma Coluna - fica um item a baixo do outro ocupa todo espaço
+    FLEX-ROW-REVERSE: Inverte
+     -->
+
+
       <div class="caixa d-flex flex-row-reverse">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
@@ -38,6 +47,15 @@
       <br><br>
 
       <h2>Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)</h2>
+
+      <!--
+      START:    Inicio - Padrçao
+      CENTER:   Centro
+      END:      Final
+      AROUND:   Divide os itens COM espaçamento e borda   
+      BETWEEN:  Divide os itens SEM espaçamento e borda   
+       -->
+
       <div class="caixa d-flex justify-content-between">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
@@ -54,6 +72,12 @@
       <br><br>
 
       <h2>Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
+
+      <!--
+        <baseline> - ALINHA OS TEXTOS, mesmo que tenha tamanhos diferentes.
+
+       <stretch> - ESTICA
+       -->
       <div class="caixa d-flex align-items-stretch">
         <div class="item" style="padding-top: 30px;">Flex item 1</div>
         <div class="item">Flex item 2</div>
@@ -61,7 +85,7 @@
       </div>
       <br><br>
 
-      <h2>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
+      <h2>Alinhamento Invidual com self : align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
       <div class="caixa d-flex">
         <div class="item align-self-start">Flex item 1</div>
         <div class="item align-self-center">Flex item 2</div>
